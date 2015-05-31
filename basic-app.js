@@ -12,7 +12,7 @@ if (Meteor.isClient) {
       e.preventDefault();
 
       var formEl    = tmpl.find('form');
-      var commentEl = tmpl.find('[name   = comment]');
+      var commentEl = tmpl.find('[name = comment]');
       var comment   = commentEl.value;
 
       /* TEST THE EVENT HANDLER IS WORKING*/
@@ -25,6 +25,7 @@ if (Meteor.isClient) {
         room      : 'master',
         comment   : comment
       });
+
       formEl.reset();
     }
   });
