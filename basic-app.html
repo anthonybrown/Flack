@@ -4,6 +4,7 @@
 
 <body>
   {{> CommentList}}
+  {{> CommentAdd}}
 </body>
 
 <template name="CommentList">
@@ -21,4 +22,11 @@
     <li>Sorry, no comments yet.</li>
   {{/each}}
   </ul>
+</template>
+
+<template name='CommentAdd'>
+  <form>
+    <input type="text" name="comment" autofocus placeholder='Add a comment...'/>
+    <input type="submit" value="Add" />
+  </form>
 </template>
