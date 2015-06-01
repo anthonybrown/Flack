@@ -22,7 +22,7 @@ if (Meteor.isClient) {
       Comments.insert({
         login     : 'tBrown',
         timestamp : new Date,
-        room      : 'master',
+        room      : 'master control',
         comment   : comment
       });
 
